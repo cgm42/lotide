@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@cgm42/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a learning project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/cgm42/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "cgm42",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cgm42/lotide/issues"
