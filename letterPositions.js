@@ -25,9 +25,7 @@ const letterPositions = function(sentence) {
       result[letter] = [];
     }
     result[letter].push(i);
-
   }
-
   return result;
 };
 
