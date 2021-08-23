@@ -1,9 +1,16 @@
 const tail = require('../tail');
 const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-const result = tail(["hello", "lighthouse", "labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "lighthouse");
-assertEqual(result[1], "labs");
 
-assertEqual(tail([5, 6, 7]).join(''), [6, 7].join(''));
+describe("#tail", () => {
+  it("returns 3 for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+  it('returns Labs for ["Hello", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+  it("returns undefined for []", () => {
+    assert.deepEqual(tail([]), []);
+  });
+});
